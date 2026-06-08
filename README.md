@@ -16,11 +16,11 @@ Application web interne permettant d’afficher sur un écran (TV de bureau) les
   - saisir une description détaillée des travaux.
 - **Dark mode / Light mode** avec bascule et préférence mémorisée dans le navigateur.
 - Nettoyage automatique des messages expirés via un **cron** (suppression des dates passées).
-- Stockage centralisé en **SQLite** via PDO (aucun serveur SQL externe requis).[web:132]
+- Stockage centralisé en **SQLite** via PDO (aucun serveur SQL externe requis).
 
 ## Stack technique
 
-- **Backend** : PHP 8.x (ou supérieur) avec extension `PDO_SQLITE` activée.[web:132]
+- **Backend** : PHP 8.x (ou supérieur) avec extension `PDO_SQLITE` activée.
 - **Base de données** : SQLite (fichier `data/travaux.db` créé automatiquement).
 - **Frontend** : HTML5, CSS3, JavaScript vanilla (pas de framework).
 - **Thème** : variables CSS + `data-theme="light|dark"` + `localStorage` pour persister le thème.
@@ -70,7 +70,7 @@ cd
 2. **Pré-requis PHP**
 
 - PHP 8.x ou plus récent.
-- Extension `pdo_sqlite` activée (`php -m | grep sqlite` doit retourner `pdo_sqlite` / `sqlite3`).[web:132]
+- Extension `pdo_sqlite` activée (`php -m | grep sqlite` doit retourner `pdo_sqlite` / `sqlite3`).
 
 3. **Droits sur le dossier `data/`**
 
@@ -118,7 +118,7 @@ Exemple de ligne de cron :
 0 3 * * * /usr/bin/php /chemin/vers/travaux-orange-sql/cleanup.php >/dev/null 2>&1
 ```
 
-Cela permet d’éviter que la base ne s’encombre de messages obsolètes à long terme.[web:120][web:123]
+Cela permet d’éviter que la base ne s’encombre de messages obsolètes à long terme.
 
 ## Utilisation
 

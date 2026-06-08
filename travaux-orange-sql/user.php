@@ -4,7 +4,7 @@ require __DIR__ . '/db.php';
 $pdo   = get_pdo();
 $today = date('Y-m-d');
 
-// Récupère les messages pour la date du jour[web:121][web:132]
+// Récupère les messages pour la date du jour
 $stmt = $pdo->prepare("SELECT * FROM messages WHERE display_date = :today ORDER BY id ASC");
 $stmt->execute([':today' => $today]);
 $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -37,7 +37,7 @@ function updateToggleUI(theme) {
 }
 
 function initTheme() {
-  const theme = getPreferredTheme(); // stocké dans localStorage ou dérivé de la préférence système[web:68][web:71]
+  const theme = getPreferredTheme(); // stocké dans localStorage ou dérivé de la préférence système
   document.documentElement.dataset.theme = theme;
   updateToggleUI(theme);
 

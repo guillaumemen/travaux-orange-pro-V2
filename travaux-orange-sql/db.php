@@ -8,7 +8,7 @@ function get_pdo(): PDO {
     }
 
     $dbPath = $dbDir . '/travaux.db';
-    $dsn = 'sqlite:' . $dbPath; // Connexion PDO SQLite[web:132]
+    $dsn = 'sqlite:' . $dbPath; // Connexion PDO SQLite
 
     $pdo = new PDO($dsn);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -27,7 +27,7 @@ function init_db(): void {
             created_at   TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
         );
     ";
-    // Création table via PDO + SQLite[web:125][web:134]
+    // Création table via PDO + SQLite
     $pdo->exec($sql);
 }
 
