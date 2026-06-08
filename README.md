@@ -2,6 +2,9 @@
 
 Application web interne permettant d’afficher sur un écran (TV de bureau) les travaux réseau Orange prévus pour la journée, avec une interface d’administration pour planifier les messages.
 
+![admin](1.png)
+![user](2.png)
+
 ## Fonctionnalités
 
 - Affichage en **temps réel** des interventions prévues pour la date du jour (00:00 → 23:59).
