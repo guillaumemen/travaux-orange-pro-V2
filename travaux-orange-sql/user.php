@@ -47,8 +47,7 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <section class="hero card">
       <h1>Travaux réseau Orange</h1>
       <p class="text-muted">
-        Cette page affiche les interventions planifiées pour la journée sur l’infrastructure Orange
-        (coupures fibre, travaux de maintenance, bascules de liens, etc.).
+       Interventions planifiées pour la journée sur l’infrastructure Orange
       </p>
     </section>
 
