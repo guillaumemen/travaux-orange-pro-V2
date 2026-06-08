@@ -1,0 +1,120 @@
+.admin-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.admin-main {
+  max-width: 1040px;
+  margin: 20px auto;
+  padding: 0 16px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+  gap: 20px;
+}
+
+.admin-panel h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Formulaire */
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated-soft);
+  color: var(--text);
+  font: inherit;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.form-actions {
+  margin-top: 8px;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-strong);
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* Liste messages */
+
+.message-list {
+  margin-top: 10px;
+  max-height: 420px;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.message-item {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background: var(--bg-elevated-soft);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.message-title {
+  font-weight: 600;
+}
+
+.message-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.message-text {
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  margin-top: 4px;
+}
+
+.message-actions {
+  margin-top: 6px;
+  text-align: right;
+}
+
+.message-actions button {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  margin-left: 4px;
+}

@@ -1,0 +1,84 @@
+.topbar-date {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 2.2rem; /* ~44px avec base 20px */
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.messages-section {
+  margin-top: 20px;
+}
+
+.messages-section h2 {
+  margin-bottom: 8px;
+  font-size: 1.6rem; /* ~32px */
+}
+
+/* Contenu messages */
+
+.messages-container {
+  margin-top: 6px;
+  padding: 16px 18px;
+  max-width: 900px; /* évite les lignes trop longues sur TV */
+}
+
+.message-card {
+  background: var(--bg-elevated-soft);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-left: 4px solid var(--accent);
+}
+
+.message-title-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.message-title {
+  font-weight: 700;
+  font-size: 1.6rem; /* ~32px */
+}
+
+.message-meta {
+  font-size: 1.1rem; /* ~22px */
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.message-text {
+  white-space: pre-wrap;
+  font-size: 1.4rem; /* ~28px */
+}
+
+.message-empty {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}
+
+/* Footer */
+
+.footer {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--text-muted);
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
