@@ -91,7 +91,7 @@ docker compose down
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/TON-USER/travaux-orange-pro.git
+git clone https://github.com/guillaumemen/travaux-orange-pro-V2.git
 cd travaux-orange-pro
 ```
 
