@@ -1,0 +1,14 @@
+services:
+  travaux-orange:
+    build: .
+    container_name: travaux-orange
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - travaux_data:/var/www/html/data
+    environment:
+      TZ: Europe/Paris
+
+volumes:
+  travaux_data:

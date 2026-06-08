@@ -79,7 +79,7 @@ $today = date('Y-m-d');
           <span class="brand-text">Travaux Orange – Admin</span>
         </div>
         <p class="admin-subtitle">
-          Gestion des messages affichés sur la page utilisateurs.
+          Gestion des messages affichés d'intervention Orange.
         </p>
       </div>
       <button
